@@ -130,12 +130,12 @@ nav .nav-about .follow-us .fa-youtube{
 #banner .banner-div .banner-content ul li i{
     margin-right: 8px;
 }
-#banner .banner-div .banner-content .banner-banner-buttons button{
+#banner .banner-div .banner-content .banner-buttons button{
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
     text-transform: uppercase;
-    border-radius: 30px;
+    border-radius: 48px;
     padding: 12px 30px;
 }
 #banner .banner-div .banner-content .banner-buttons button:nth-child(2){
@@ -324,4 +324,328 @@ footer{
     font-size: 16px;
     padding-bottom: 100px;
 
+}
+
+
+
+/* responsive */
+/* for mobile view */
+
+@media screen and (max-width: 576px) {
+        /* navbar section styles */
+        nav {
+            flex-direction: column;
+        }
+    
+        nav .nav-logo img {
+            width: 60px;
+            height: 26px;
+        }
+    
+        nav .nav-logo h2 {
+            font-size: 30px;
+        }
+    
+        nav .nav-about {
+            margin-top: 30px;
+            gap: 20px;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+    /* banner section styles */
+
+    #banner {
+        padding: 40px 0;
+        background-position: center bottom;
+        background-size: 100%;
+    }
+
+    #banner .banner-div {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    #banner .banner-div .banner-content {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    banner .banner-div .banner-content ul{
+        padding-left: 20px;
+    }
+
+    #banner .banner-div .banner-content h2 {
+        font-size: 20px;
+    }
+
+    #banner .banner-div .banner-content h1 {
+        font-size: 54px;
+    }
+
+    #banner .banner-div .banner-content ul {
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #banner .banner-div .banner-content ul li {
+        font-size: 12px;
+    }
+
+    #banner .banner-div .banner-content ul li i {
+        margin-right: 8px;
+    }
+
+    #banner .banner-div .banner-content .banner-buttons button {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 30px;
+    }
+
+    #banner .banner-div .banner-img {
+        width: 100%;
+    }
+
+
+     /* online games funny videos section styles */
+
+    #online-g h2{
+        font-size: 22px;
+    }
+    #online-g .online-g-des{
+        font-size: 12px;
+    }
+    #online-g .game-cards{
+        flex-direction: column;
+        gap: 30px;
+    }
+    #online-g .game-cards .cards{
+        width: 100%;
+    }
+    #online-g .game-cards .cards img{
+        width: 100%;
+    }
+
+    /* play instant game section styles */
+
+    #play-inst{
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    #play-inst .play-ins-cont{
+        width: 100%;
+    }
+    #play-inst .play-ins-cont h2{
+        font-size: 26px;
+        text-align: center;
+    }
+    #play-inst .play-ins-cont p{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #play-inst .instant-img{
+        width: 80%;
+    }
+    #play-inst .instant-img .first-img{
+        width: 100%;
+        margin-left: 10%;
+    }
+    #play-inst .instant-img .second-img{
+        top: -70px;
+        left: -10px;
+    }
+
+    /* game button styles */
+    #buttons{
+        width: 100%;
+        padding: 0 0 10px;
+
+    }
+    #buttons .btn-container{
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 20px;
+    }
+    #buttons .btn-container li a{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 8px;
+    }
+    #buttons .btn-container li a img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    /* footer section */
+    .footer-dir{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-dir p{
+        font-size: 12px;
+    
+    }
+    .footer-sm{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+    .footer-term{
+        font-size: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .footer-term p{
+        font-size: 8px;
+    }
+    .footer-copy{
+        font-size: 8px;
+
+    
+    }
+
+}
+
+/* for lablet */
+@media screen and (min-width:577px) and (max-width:820px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .nav-logo img {
+        width: 60px;
+        height: 26px;
+    }
+
+    nav .nav-logo h2 {
+        font-size: 30px;
+    }
+
+    nav .nav-about {
+        margin-top: 30px;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+/* banner section styles */
+
+.banner-div{
+    padding: 0;
+}
+    #banner .banner-div .banner-content .banner-buttons button {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 30px;
+    }
+
+
+ /* online games funny videos section styles */
+
+#online-g h2{
+    font-size: 22px;
+}
+#online-g .online-g-des{
+    font-size: 12px;
+}
+#online-g .game-cards{
+    flex-direction: column;
+    gap: 30px;
+}
+#online-g .game-cards .cards{
+    width: 100%;
+}
+#online-g .game-cards .cards img{
+    width: 100%;
+}
+
+/* play instant game section styles */
+
+#play-inst{
+    flex-direction: column;
+    gap: 80px;
+}
+
+#play-inst .play-ins-cont{
+    width: 100%;
+}
+#play-inst .play-ins-cont h2{
+    font-size: 26px;
+    text-align: center;
+}
+#play-inst .play-ins-cont p{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+#play-inst .instant-img{
+    width: 80%;
+}
+#play-inst .instant-img .first-img{
+    width: 100%;
+    margin-left: 10%;
+}
+#play-inst .instant-img .second-img{
+    top: -70px;
+    left: -10px;
+}
+
+/* game button styles */
+#buttons{
+    width: 100%;
+    padding: 0 0 10px;
+
+}
+#buttons .btn-container{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+}
+#buttons .btn-container li a{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+}
+#buttons .btn-container li a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* footer section */
+.footer-dir{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer-dir p{
+    font-size: 15px;
+
+}
+.footer-sm{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.footer-term{
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.footer-term p{
+    font-size: 10px;
+}
+.footer-copy{
+    font-size: 10px;
+
+}
 }
