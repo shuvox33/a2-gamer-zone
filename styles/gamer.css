@@ -190,6 +190,51 @@ nav .nav-about .follow-us .fa-youtube{
     margin-top: 8px;
 }
 
+/* watch now hover  */
+.video-div{
+    position: relative;
+    overflow: hidden;
+}
+.video-div .hidden-section{
+    position: absolute;
+    top: 10000px;
+    left: 0;
+    background: #000000a6;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.video-div:hover .hidden-section{
+    top: 0;
+}
+.video-div .hidden-section .watch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.video-div .play-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 16px;
+}
+
+.video-div .play-button i {
+    color: #000;
+}
+.video-div p {
+    color: #F948B2;
+    text-align: center;
+}
+
 /* play instant game section styles */
 
 #play-inst{
